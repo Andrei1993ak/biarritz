@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Biarritz Salon</string>
+
+    <string name="nav_home">O nas</string>
+    <string name="nav_prices">Cennik</string>
+    <string name="nav_contact">Kontakt</string>
+    <string name="nav_order">Rezerwacja</string>
+    <string name="nav_profile">Profil</string>
+
+    <string name="home_header">Salon fryzjerski Biarritz</string>
+    <string name="home_text1">Salon Fryzjerski Biarritz powstał z myślą o ludziach, którzy lubią mieć piękne i zadbane
+        włosy. Jesteśmy dla tych, dla których wygląd i fryzura są w życiu istotne. Dla tych, którzy lubią zaszaleć z
+        fryzurą lub potrzebują zmian.
+    </string>
+    <string name="home_text2">Doskonała obsługa, najlepsze preparaty do stylizacji i pielęgnacji włosów, najnowsze
+        techniki strzyżenia i farbowania, nowinki w dziedzinie fryzjerstwa – to wszystko znajdziesz w naszym salonie.
+        Nasze stylistki nieustannie się rozwijają, łącząc techniki wschodu i zachodu umiejętnie radzą sobie z każdym
+        typem włosów. Zapewniamy miłą atmosferę i pyszną kawę.
+    </string>
+    <string name="home_text3">W naszym salonie fryzjerskim na Kochanowskiego 2 w Gliwicach pracują doskonali fryzjerzy.
+        Nasi styliści mają bogatą wiedzę na temat włosów i profesjonalnych preparatów do farbowania i stylizacji,
+        posiadają wieloletnie doświadczenie w dziedzinie fryzjerstwa. Regularnie biorą udział w szkoleniach i uczą się u
+        znanych fryzjerów-stylistów, udoskonalają się aby świadczyć usługi na najwyższym poziomie. Ambitni i nieustanie
+        rozwijający nowe umiejętności we fryzjerstwie, pracujący z pasją i miłością do swojego zawodu.
+    </string>
+</resources>
