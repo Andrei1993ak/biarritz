@@ -56,9 +56,8 @@
                 android:layout_marginTop="@dimen/price_item_margin_top"
                 android:textSize="@dimen/subhead_text_size"
                 android:text="@string/price_man_beard_mustache_name"
-                app:layout_constraintStart_toStartOf="@+id/curlImage"
-                app:layout_constraintTop_toBottomOf="@+id/curlImage"
-                android:layout_marginStart="@dimen/price_item_margin_start"/>
+                app:layout_constraintStart_toStartOf="@+id/coloringTwoColorsItemName"
+                app:layout_constraintTop_toBottomOf="@+id/curlImage"/>
 
         <TextView
                 android:id="@+id/beardMustacheItemPrice"
@@ -67,10 +66,9 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/subhead_text_size"
                 android:text="@string/price_man_beard_mustache"
-                app:layout_constraintEnd_toEndOf="@+id/curlImage"
-                app:layout_constraintStart_toEndOf="@+id/beardMustacheItemName"
+                app:layout_constraintStart_toStartOf="@+id/coloringTwoColorsItemPrice"
                 app:layout_constraintTop_toTopOf="@+id/beardMustacheItemName"
-                app:layout_constraintHorizontal_bias="0.645"/>
+        />
 
         <TextView
                 android:id="@+id/manHaircutItemName"
@@ -375,7 +373,8 @@
                 android:layout_marginTop="@dimen/price_item_margin_top"
                 android:textSize="@dimen/subhead_text_size"
                 android:text="@string/price_coloring_two_colors_name"
-                app:layout_constraintStart_toStartOf="@+id/coloringItemName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/coloringTwoColorsItemPrice"
                 app:layout_constraintTop_toBottomOf="@+id/coloringItemName"/>
 
         <TextView
@@ -385,7 +384,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/subhead_text_size"
                 android:text="@string/price_coloring_two_colors"
-                app:layout_constraintStart_toStartOf="@+id/coloringItemPrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/coloringTwoColorsItemName"
                 app:layout_constraintTop_toTopOf="@+id/coloringTwoColorsItemName"/>
 
         <TextView
