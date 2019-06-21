@@ -23,4 +23,51 @@
         znanych fryzjerów-stylistów, udoskonalają się aby świadczyć usługi na najwyższym poziomie. Ambitni i nieustanie
         rozwijający nowe umiejętności we fryzjerstwie, pracujący z pasją i miłością do swojego zawodu.
     </string>
+
+
+    <string name="price_header">Cennik</string>
+    <string name="price_man_header">Mężczyźni</string>
+    <string name="price_woman_header">Kobiety</string>
+    <string name="price_children_header">Dzieci</string>
+    <string name="price_coloring_header">Koloryzacja*</string>
+    <string name="price_other_procedures_header">Inne zabiegi*</string>
+    <string name="price_man_beard_mustache_name">Broda i wąsy</string>
+    <string name="price_man_beard_mustache">10-20 zł</string>
+    <string name="price_man_haircut_name">Strzyżenie*</string>
+    <string name="price_man_haircut">39 zł</string>
+    <string name="price_man_haircut_cover_name">Strzyżenie + Cover 5′</string>
+    <string name="price_man_haircut_cover">69 zł</string>
+    <string name="price_woman_modeling_name">Modelowanie</string>
+    <string name="price_woman_modeling">39-45-49 zł</string>
+    <string name="price_woman_haircut_name">Strzyżenie*</string>
+    <string name="price_woman_haircut">59-65-69 zł</string>
+    <string name="price_woman_polishing_hair_name">Polerowanie włosów</string>
+    <string name="price_woman_polishing_hair">od 65-79 zł</string>
+    <string name="price_woman_hairstyle_name">Upięcie</string>
+    <string name="price_woman_hairstyle">od 69-120 zł</string>
+    <string name="price_woman_wedding_hairstyle_name">Upięcie ślubne</string>
+    <string name="price_woman_wedding_hairstyle">od 119-179 zł</string>
+    <string name="price_children_boys_haircut_name">Strzyżenie chłopięce**</string>
+    <string name="price_children_boys_haircut">29 zł</string>
+    <string name="price_children_girls_haircut_name">Strzyżenie dziewczynki**</string>
+    <string name="price_children_girls_haircut">29-49 zł</string>
+    <string name="price_children_text">Po strzyżeniu niespodzianka dla dziecka</string>
+    <string name="price_coloring_one_color_name">Farbowanie (1 kolor)</string>
+    <string name="price_coloring_one_color">110-119-129 zł</string>
+    <string name="price_coloring_two_colors_name">Farbowanie (2+ kolorów)</string>
+    <string name="price_coloring_two_colors">129-139-149 zł</string>
+    <string name="price_coloring_highlights_name">Pasemka</string>
+    <string name="price_coloring_highlights">100-110-120 zł</string>
+    <string name="price_coloring_reflection_name">Refleksy</string>
+    <string name="price_coloring_reflection">39-45-49 zł</string>
+    <string name="price_coloring_discoloration_name">Dekoloryzacja</string>
+    <string name="price_coloring_discoloration">69-79-89 zł</string>
+    <string name="price_coloring_toning_name">Tonowanie</string>
+    <string name="price_coloring_toning">40-50-60 zł</string>
+    <string name="price_others_perm_name">Bio-Trwała ondulacja</string>
+    <string name="price_others_perm">149-179-259 zł</string>
+    <string name="price_others_hair_reconstruction_name">Rekonstrukcja włosa*</string>
+    <string name="price_others_hair_reconstruction">39-49-59 zł</string>
+    <string name="price_reference_first">* Cena obejmuje mycie i modelowanie</string>
+    <string name="price_reference_second">** Dzieci do 16 lat</string>
 </resources>

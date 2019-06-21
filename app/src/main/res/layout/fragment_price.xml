@@ -1,19 +1,570 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <TextView
-            android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:text="Price"/>
+            android:padding="@dimen/content_padding">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/header_text_size"
+                android:text="@string/price_header"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+                android:id="@+id/manHeader"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_man_header"
+                android:layout_marginTop="@dimen/subhead_text_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+        <ImageView
+                android:id="@+id/curlImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_curl_height"
+                android:background="@drawable/ic_zawitka"
+                android:layout_marginTop="@dimen/image_curl_margin_top"
+                android:layout_marginBottom="@dimen/image_curl_margin_bottom"
+                app:layout_constraintTop_toBottomOf="@+id/manHeader"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:id="@+id/beardMustacheItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_man_beard_mustache_name"
+                app:layout_constraintStart_toStartOf="@+id/curlImage"
+                app:layout_constraintTop_toBottomOf="@+id/curlImage"
+                android:layout_marginStart="@dimen/price_item_margin_start"/>
+
+        <TextView
+                android:id="@+id/beardMustacheItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_man_beard_mustache"
+                app:layout_constraintEnd_toEndOf="@+id/curlImage"
+                app:layout_constraintStart_toEndOf="@+id/beardMustacheItemName"
+                app:layout_constraintTop_toTopOf="@+id/beardMustacheItemName"
+                app:layout_constraintHorizontal_bias="0.645"/>
+
+        <TextView
+                android:id="@+id/manHaircutItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_man_haircut_name"
+                app:layout_constraintStart_toStartOf="@+id/beardMustacheItemName"
+                app:layout_constraintTop_toBottomOf="@+id/beardMustacheItemName"/>
+
+        <TextView
+                android:id="@+id/manHaircutItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_man_haircut"
+                app:layout_constraintStart_toStartOf="@+id/beardMustacheItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/manHaircutItemName"/>
+
+        <TextView
+                android:id="@+id/manHaircutCoverItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_man_haircut_cover_name"
+                app:layout_constraintStart_toStartOf="@+id/manHaircutItemName"
+                app:layout_constraintTop_toBottomOf="@+id/manHaircutItemName"/>
+
+        <TextView
+                android:id="@+id/manHaircutCoverItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_man_haircut_cover"
+                app:layout_constraintStart_toStartOf="@+id/beardMustacheItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/manHaircutCoverItemName"/>
+
+        <TextView
+                android:id="@+id/womanHeader"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_woman_header"
+                android:layout_marginTop="@dimen/subhead_text_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/manHaircutCoverItemName"/>
+
+        <ImageView
+                android:id="@+id/curlImageSecond"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_curl_height"
+                android:background="@drawable/ic_zawitka"
+                android:layout_marginTop="@dimen/image_curl_margin_top"
+                android:layout_marginBottom="@dimen/image_curl_margin_bottom"
+                app:layout_constraintTop_toBottomOf="@+id/womanHeader"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:id="@+id/womanModelingItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_woman_modeling_name"
+                app:layout_constraintStart_toStartOf="@+id/manHaircutCoverItemName"
+                app:layout_constraintTop_toBottomOf="@+id/curlImageSecond"/>
+
+        <TextView
+                android:id="@+id/womanModelingItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_woman_modeling"
+                app:layout_constraintStart_toStartOf="@+id/manHaircutCoverItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/womanModelingItemName"/>
+
+        <TextView
+                android:id="@+id/womanHaircutItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_woman_haircut_name"
+                app:layout_constraintStart_toStartOf="@+id/womanModelingItemName"
+                app:layout_constraintTop_toBottomOf="@+id/womanModelingItemName"/>
+
+        <TextView
+                android:id="@+id/womanHaircutItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_woman_haircut"
+                app:layout_constraintStart_toStartOf="@+id/womanModelingItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/womanHaircutItemName"/>
+
+        <TextView
+                android:id="@+id/womanPolishingItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_woman_polishing_hair_name"
+                app:layout_constraintStart_toStartOf="@+id/womanHaircutItemName"
+                app:layout_constraintTop_toBottomOf="@+id/womanHaircutItemName"/>
+
+        <TextView
+                android:id="@+id/womanPolishingItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_woman_polishing_hair"
+                app:layout_constraintStart_toStartOf="@+id/womanHaircutItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/womanPolishingItemName"/>
+
+        <TextView
+                android:id="@+id/womanHairstyleItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_woman_hairstyle_name"
+                app:layout_constraintStart_toStartOf="@+id/womanPolishingItemName"
+                app:layout_constraintTop_toBottomOf="@+id/womanPolishingItemName"/>
+
+        <TextView
+                android:id="@+id/womanHairstyleItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_woman_hairstyle"
+                app:layout_constraintStart_toStartOf="@+id/womanPolishingItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/womanHairstyleItemName"/>
+
+        <TextView
+                android:id="@+id/womanWeddingHairstyleItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_woman_wedding_hairstyle_name"
+                app:layout_constraintStart_toStartOf="@+id/womanHairstyleItemName"
+                app:layout_constraintTop_toBottomOf="@+id/womanHairstyleItemName"/>
+
+        <TextView
+                android:id="@+id/womanWeddingHairstyleItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_woman_wedding_hairstyle"
+                app:layout_constraintStart_toStartOf="@+id/womanHairstyleItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/womanWeddingHairstyleItemName"/>
+
+        <TextView
+                android:id="@+id/childrenHeader"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_children_header"
+                android:layout_marginTop="@dimen/subhead_text_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/womanWeddingHairstyleItemName"/>
+
+        <ImageView
+                android:id="@+id/curlImageThird"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_curl_height"
+                android:background="@drawable/ic_zawitka"
+                android:layout_marginTop="@dimen/image_curl_margin_top"
+                android:layout_marginBottom="@dimen/image_curl_margin_bottom"
+                app:layout_constraintTop_toBottomOf="@+id/childrenHeader"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:id="@+id/childBoyHaircutItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_children_boys_haircut_name"
+                app:layout_constraintStart_toStartOf="@+id/womanWeddingHairstyleItemName"
+                app:layout_constraintTop_toBottomOf="@+id/curlImageThird"/>
+
+        <TextView
+                android:id="@+id/childBoyHaircutItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_children_boys_haircut"
+                app:layout_constraintStart_toStartOf="@+id/womanWeddingHairstyleItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/childBoyHaircutItemName"/>
+
+        <TextView
+                android:id="@+id/childGirlHaircutItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_children_girls_haircut_name"
+                app:layout_constraintStart_toStartOf="@+id/childBoyHaircutItemName"
+                app:layout_constraintTop_toBottomOf="@+id/childBoyHaircutItemName"/>
+
+        <TextView
+                android:id="@+id/childGirlHaircutItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_children_girls_haircut"
+                app:layout_constraintStart_toStartOf="@+id/childBoyHaircutItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/childGirlHaircutItemName"/>
+
+        <TextView
+                android:id="@+id/childrenText"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_children_text"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/childGirlHaircutItemName"/>
+
+        <TextView
+                android:id="@+id/coloringHeader"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_header"
+                android:layout_marginTop="@dimen/subhead_text_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/childrenText"/>
+
+        <ImageView
+                android:id="@+id/curlImageForth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_curl_height"
+                android:background="@drawable/ic_zawitka"
+                android:layout_marginTop="@dimen/image_curl_margin_top"
+                android:layout_marginBottom="@dimen/image_curl_margin_bottom"
+                app:layout_constraintTop_toBottomOf="@+id/coloringHeader"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:id="@+id/coloringItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_one_color_name"
+                app:layout_constraintStart_toStartOf="@+id/childGirlHaircutItemName"
+                app:layout_constraintTop_toBottomOf="@+id/curlImageForth"/>
+
+        <TextView
+                android:id="@+id/coloringItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_one_color"
+                app:layout_constraintStart_toStartOf="@+id/childGirlHaircutItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/coloringItemName"/>
+
+        <TextView
+                android:id="@+id/coloringTwoColorsItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_two_colors_name"
+                app:layout_constraintStart_toStartOf="@+id/coloringItemName"
+                app:layout_constraintTop_toBottomOf="@+id/coloringItemName"/>
+
+        <TextView
+                android:id="@+id/coloringTwoColorsItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_two_colors"
+                app:layout_constraintStart_toStartOf="@+id/coloringItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/coloringTwoColorsItemName"/>
+
+        <TextView
+                android:id="@+id/coloringHighlightsItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_highlights_name"
+                app:layout_constraintStart_toStartOf="@+id/coloringTwoColorsItemName"
+                app:layout_constraintTop_toBottomOf="@+id/coloringTwoColorsItemName"/>
+
+        <TextView
+                android:id="@+id/coloringHighlightsItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_highlights"
+                app:layout_constraintStart_toStartOf="@+id/coloringTwoColorsItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/coloringHighlightsItemName"/>
+
+        <TextView
+                android:id="@+id/coloringReflectionItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_reflection_name"
+                app:layout_constraintStart_toStartOf="@+id/coloringHighlightsItemName"
+                app:layout_constraintTop_toBottomOf="@+id/coloringHighlightsItemName"/>
+
+        <TextView
+                android:id="@+id/coloringReflectionItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_reflection"
+                app:layout_constraintStart_toStartOf="@+id/coloringHighlightsItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/coloringReflectionItemName"/>
+
+        <TextView
+                android:id="@+id/coloringDiscolorationItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_discoloration_name"
+                app:layout_constraintStart_toStartOf="@+id/coloringReflectionItemName"
+                app:layout_constraintTop_toBottomOf="@+id/coloringReflectionItemName"/>
+
+        <TextView
+                android:id="@+id/coloringDiscolorationItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_discoloration"
+                app:layout_constraintStart_toStartOf="@+id/coloringReflectionItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/coloringDiscolorationItemName"/>
+
+        <TextView
+                android:id="@+id/coloringToningItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_toning_name"
+                app:layout_constraintStart_toStartOf="@+id/coloringDiscolorationItemName"
+                app:layout_constraintTop_toBottomOf="@+id/coloringDiscolorationItemName"/>
+
+        <TextView
+                android:id="@+id/coloringToningItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_coloring_toning"
+                app:layout_constraintStart_toStartOf="@+id/coloringDiscolorationItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/coloringToningItemName"/>
+
+        <TextView
+                android:id="@+id/otherProceduresHeader"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_other_procedures_header"
+                android:layout_marginTop="@dimen/subhead_text_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/coloringToningItemName"/>
+
+        <ImageView
+                android:id="@+id/curlImageFifth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_curl_height"
+                android:background="@drawable/ic_zawitka"
+                android:layout_marginTop="@dimen/image_curl_margin_top"
+                android:layout_marginBottom="@dimen/image_curl_margin_bottom"
+                app:layout_constraintTop_toBottomOf="@+id/otherProceduresHeader"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:id="@+id/permItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_others_perm_name"
+                app:layout_constraintStart_toStartOf="@+id/coloringToningItemName"
+                app:layout_constraintTop_toBottomOf="@+id/curlImageFifth"/>
+
+        <TextView
+                android:id="@+id/permItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_others_perm"
+                app:layout_constraintStart_toStartOf="@+id/coloringToningItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/permItemName"/>
+
+        <TextView
+                android:id="@+id/hairReconstructionItemName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_others_hair_reconstruction_name"
+                app:layout_constraintStart_toStartOf="@+id/permItemName"
+                app:layout_constraintTop_toBottomOf="@+id/permItemName"/>
+
+        <TextView
+                android:id="@+id/hairReconstructionItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_others_hair_reconstruction"
+                app:layout_constraintStart_toStartOf="@+id/permItemPrice"
+                app:layout_constraintTop_toTopOf="@+id/hairReconstructionItemName"/>
+
+        <TextView
+                android:id="@+id/priceReferenceFirst"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_reference_first"
+                android:layout_marginTop="@dimen/price_reference_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/hairReconstructionItemName"/>
+
+        <TextView
+                android:id="@+id/priceReferenceSecond"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subhead_text_size"
+                android:text="@string/price_reference_second"
+                android:layout_marginTop="@dimen/price_item_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/priceReferenceFirst"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

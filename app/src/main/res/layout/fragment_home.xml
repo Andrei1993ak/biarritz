@@ -11,20 +11,20 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp">
+            android:padding="@dimen/content_padding">
 
         <TextView
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="@dimen/header_text_margin_top"
                 android:layout_width="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="@dimen/header_text_size"
                 android:text="@string/home_header"/>
 
         <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="@dimen/image_curl_height"
+                android:layout_marginTop="@dimen/image_curl_margin_top"
                 android:background="@drawable/ic_zawitka"/>
 
         <TextView
