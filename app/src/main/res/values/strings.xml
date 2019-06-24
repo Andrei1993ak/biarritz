@@ -70,4 +70,40 @@
     <string name="price_others_hair_reconstruction">39-49-59 zł</string>
     <string name="price_reference_first">* Cena obejmuje mycie i modelowanie</string>
     <string name="price_reference_second">** Dzieci do 16 lat</string>
+
+    <string name="contact_header">Kontakt</string>
+    <string name="contact_address_header">Salon Fryzjerski Biarritz</string>
+    <string name="contact_work_time_header">Godziny otwarcia:</string>
+    <string name="contact_phone_number_first">511-552-511</string>
+    <string name="contact_phone_number_second">511-334-511</string>
+    <string name="contact_email">
+        <a href='mailto:biarritzsalon@gmail.com'>biarritzsalon@gmail.com</a>
+    </string>
+    <string name="contact_site">
+        <a href='http://biarritz.pl'>www.biarritz.pl</a>
+    </string>
+    <string name="contact_address">ul. Jana Kochanowskiego 2</string>
+    <string name="contact_address_second">44-100 Gliwice</string>
+    <string name="contact_weekdays">poniedziałek – piątek:</string>
+    <string name="contact_work_time_weekdays">8:00 – 20:00</string>
+    <string name="contact_saturday">"sobota:</string>
+    <string name="contact_work_time_saturday">9:00 – 18:00</string>
+    <string name="contact_sunday">"niedziela:</string>
+    <string name="contact_work_time_sunday">10:00 – 18:00</string>
+    <string name="reservation_button_text">Zarezerwuj wizytę online</string>
+    <string name="contact_parking_text">Obok salonu znajdują się bezpłatne miejsca parkingowe w bliskiej odległości od
+        wejścia (od strony ul. Kochanowskiego)
+    </string>
+    <string name="google_maps_button_text">Otwórz w google maps</string>
+
+    <string name="reservation_header">Rezerwacja Online</string>
+    <string name="reservation_text_first">Salon fryzjerski Biarritz przyjmuje chętnych 7 DNI W TYGODNIU, z możliwością
+        zapisu telefonicznie lub Online rezerwacją. Zarezerwować termin można w dowolnym czasie na dowolny wolny termin.
+    </string>
+    <string name="reservation_text_second">Rezerwacja jest darmowa, wystarczy raz założyć konto w serwisie
+        rezerwacyjnym, a później tylko wybrać interesującą nas godzinę oraz usługę. Jeśli potrzebujecie więcej niż jedną
+        usługę, można rezerwować dłuższy czas pracy fryzjera.
+    </string>
+    <string name="order_reservation_button_text">Zarezerwuj teraz</string>
+
 </resources>

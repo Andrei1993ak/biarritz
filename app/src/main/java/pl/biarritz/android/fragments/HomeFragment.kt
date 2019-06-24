@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         if (images.isEmpty()) {
-            loadImages()
+//            loadImages()
         } else {
             onHomeImageLoaded(images[0])
             onImagesLoaded(images.subList(1, images.size))
