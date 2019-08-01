@@ -18,4 +18,5 @@
     <dimen name="simple_text_size">15sp</dimen>
     <dimen name="price_reference_margin_top">25dp</dimen>
     <dimen name="corner_radius">5dp</dimen>
+    <dimen name="profile_margin">20dp</dimen>
 </resources>

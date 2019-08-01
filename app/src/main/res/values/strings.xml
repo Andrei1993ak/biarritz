@@ -106,4 +106,36 @@
     </string>
     <string name="order_reservation_button_text">Zarezerwuj teraz</string>
 
+    <string name="dialog_woman">Dialog 1</string>
+    <string name="dialog_woman_message_text">Info for woman</string>
+    <string name="dialog_man_message_text">Info for man</string>
+    <string name="dialog_children_message_text">Info for children</string>
+    <string name="set_visit">Set visit</string>
+    <string name="ok">Ok</string>
+    <string name="pin_text_hint"><font size="15">Enter pin</font></string>
+    <string name="woman_profile_header">Woman profile</string>
+    <string name="man_profile_header">Man profile</string>
+    <string name="child_profile_header">Children profile</string>
+
+    <plurals name="days">
+        <item quantity="one">дня</item>
+        <item quantity="few">дней</item>
+        <item quantity="many">дней</item>
+        <item quantity="other">дней</item>
+    </plurals>
+
+    <plurals name="visits">
+        <item quantity="one">посещение</item>
+        <item quantity="few">посещения</item>
+        <item quantity="many">посещений</item>
+        <item quantity="other">посещений</item>
+    </plurals>
+
+    <plurals name="times">
+        <item quantity="one">раз</item>
+        <item quantity="few">раза</item>
+        <item quantity="many">раз</item>
+        <item quantity="other">раз</item>
+    </plurals>
+
 </resources>

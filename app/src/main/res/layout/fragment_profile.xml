@@ -13,12 +13,29 @@
             android:layout_height="wrap_content"
             android:padding="@dimen/content_padding">
 
-        <TextView
-                android:layout_marginTop="@dimen/header_text_margin_top"
-                android:layout_width="wrap_content"
+        <ImageView
+                android:id="@+id/womanProfile"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:textSize="@dimen/header_text_size"
-                android:text="Profile"/>
+                android:adjustViewBounds="true"
+                android:layout_marginTop="@dimen/image_curl_margin_top"
+                android:src="@drawable/woman"/>
+
+        <ImageView
+                android:id="@+id/manProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="@dimen/image_curl_margin_top"
+                android:src="@drawable/man"/>
+
+        <ImageView
+                android:id="@+id/childrenProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="@dimen/image_curl_margin_top"
+                android:src="@drawable/children"/>
+
     </LinearLayout>
 </ScrollView>
