@@ -27,10 +27,9 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         if (images.isEmpty()) {
-//            loadImages()
+            loadImages()
         } else {
-            onHomeImageLoaded(images[0])
-            onImagesLoaded(images.subList(1, images.size))
+            onImagesLoaded(images)
         }
     }
 
@@ -38,31 +37,21 @@ class HomeFragment : Fragment() {
         thread {
             try {
                 activity?.assets?.let {
-                    for (x in 0..7) {
+                    for (x in 0..6) {
 
-                        val inputStream = it.open("images/$x.jpeg")
+                        val inputStream = it.open("images/$x.jpg")
 
                         val bitmap = BitmapFactory.decodeStream(inputStream)
 
                         inputStream.close()
                         images.add(bitmap)
-
-                        if (x == 0) {
-                            onHomeImageLoaded(bitmap)
-                        }
                     }
 
-                    onImagesLoaded(images.subList(1, images.size))
+                    onImagesLoaded(images)
                 }
             } catch (e: Exception) {
                 Log.e("HomeFragment", e.message, e)
             }
-        }
-    }
-
-    private fun onHomeImageLoaded(bitmap: Bitmap) {
-        activity?.runOnUiThread {
-            homeImageView?.setImageBitmap(bitmap)
         }
     }
 
